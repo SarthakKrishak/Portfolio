@@ -7,6 +7,8 @@ import { PiXLogoFill } from "react-icons/pi";
 import ProjectCard from '../Components/ProjectCard';
 import { Link } from 'react-router-dom';
 import { IoIosArrowDown } from "react-icons/io";
+import UpcomingCard from '../Components/UpcomingCard';  
+import Footer from '../Components/Footer';
 
 const Home = () => {
     return (
@@ -41,19 +43,19 @@ const Home = () => {
                             <div className='bg-[#14B8A6] mt-24 size-[47vh] rounded-xl overflow-hidden object-fill'>
                                 <img src="./src/assets/pro.png" alt="image" />
                             </div>
-                            <div className='flex items-center aspect-auto text-2xl gap-5'>
+                            <div className='flex items-center aspect-auto text-md gap-5'>
                                 <a href="https://www.instagram.com/sarthak_krishak/"
                                     target="_blank"
-                                    rel="noopener noreferrer">  <RxInstagramLogo className='text-[#8C8C94] hover:text-white transition-colors duration-200' /></a>
+                                    rel="noopener noreferrer">  <RxInstagramLogo className='text-[#8C8C94] hover:text-[#14B8A6] transition-colors duration-200' /></a>
                                 <a href="https://www.linkedin.com/in/sarthakkrishak/"
                                     target="_blank"
-                                    rel="noopener noreferrer">    <RxLinkedinLogo className='text-[#8C8C94] hover:text-white transition-colors duration-200' /></a>
+                                    rel="noopener noreferrer">    <RxLinkedinLogo className='text-[#8C8C94] hover:text-[#14B8A6] transition-colors duration-200' /></a>
                                 <a href="https://github.com/SarthakKrishak"
                                     target="_blank"
-                                    rel="noopener noreferrer">  <RxGithubLogo className='text-[#8C8C94] hover:text-white transition-colors duration-200' /></a>
+                                    rel="noopener noreferrer">  <RxGithubLogo className='text-[#8C8C94] hover:text-[#14B8A6] transition-colors duration-200' /></a>
                                 <a href="https://x.com/krishak_sarthak"
                                     target="_blank"
-                                    rel="noopener noreferrer"><PiXLogoFill className='text-[#8C8C94] hover:text-white transition-colors duration-200' /></a>
+                                    rel="noopener noreferrer"><PiXLogoFill className='text-[#8C8C94] hover:text-[#14B8A6] transition-colors duration-200' /></a>
                             </div>
                             <div>
 
@@ -75,23 +77,46 @@ const Home = () => {
                             <ProjectCard />
                         </div>
                     </div>
-                    <div className='flex justify-center items-center text-sm mt-5 pr-8 pl-4'>
+                    <div className='flex justify-center items-center text-sm mt-3 pr-8 pl-4'>
                         <Link to={"/project"}>See more </Link><span><IoIosArrowDown className='size-3.5 font-bold' /></span>
                     </div>
                 </section>
+
                 {/* Upcoming Project */}
                 <section className='w-full text-white pl-3 flex flex-col gap-4 mt-10'>
                     <h1 className='text-[2.8vw] text-white font-bold'>Upcoming Projects</h1>
                     <div className='flex flex-wrap shrink-0 w-full gap-6'>
                         <div className='flex items-center justify-between w-full gap-3 pl-4 pr-8'>
-                            <ProjectCard />
-                            <ProjectCard />
+                            <UpcomingCard />
+                            <UpcomingCard />
                         </div>
                     </div>
-                    <div className='flex justify-center items-center text-sm mt-5 pr-8 pl-4'>
+                    <div className='flex justify-center items-center text-sm mt-3 pr-8 pl-4'>
                         <Link to={"/project"}>See more </Link><span><IoIosArrowDown className='size-3.5 font-bold' /></span>
                     </div>
                 </section>
+
+                {/* Hire me */}
+                <section className=' bg-[#161C31] text-white mt-12 pt-6 pb-6 pl-6 pr-10 flex flex-col gap-1 rounded ml-3 mb-10 mr-1 border border-[#1F2937]'> 
+                    <h1 className='text-[1.5vw] font-semibold'>Want to hire me? Lets discuss.</h1>
+                    <div>
+                        <h2 className='text-[#e5e3e3] text-[1.2vw]'>Drop your message and let's discuss about your project.</h2>
+                        <button className='bg-[#4ADE80] text-black mt-1 text-sm font-bold px-2 rounded-sm py-[0.4vh]'>Chat on Whatsapp</button>
+                    </div>
+                    <hr className='text-[#858585] mt-6 mb-5'/>
+                    <h2 className='text-[#e5e3e3] text-[1.2vw]'>Drop me a mail and I will get back to you.</h2>
+                    <div className='bg-[#1F2937] w-full h-10 flex justify-between items-center rounded-md'>
+                        <span className='text-[#828282] text-[1.1vw] pl-3'>sarthakkrishak1234@gmail.com</span>
+                        <a href='mailto:sarthakkrishak1234@gmail.com' className='bg-[#374151] font-semibold text-[1.2vw] px-3 m-1 py-1 rounded-sm'>Send me</a>
+                    </div>
+                </section>
+
+                <Footer />
+                
+                <section className='text-[#9CA3AF] mb-8 text-[1.1vw] ml-4'>
+                    <h1 className='flex items-center gap-1'>Find me on <a target='_blank' href='https://www.linkedin.com/in/sarthakkrishak/' className='text-[#14B8A6]'><RxLinkedinLogo /></a> and<a href='' target='_blank' className='text-[#14B8A6]'><PiXLogoFill /></a></h1>
+                </section>
+
             </div>
         </div>
     )
