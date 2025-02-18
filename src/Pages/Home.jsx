@@ -13,8 +13,7 @@ import Footer from '../Components/Footer';
 const Home = () => {
     return (
         <div className='bg-[#18181B] min-h-screen w-full flex justify-center'>
-            <div></div>
-            <div className='min-h-[100vh] w-[60vw] mt-10'>
+            <div className='min-h-[100vh] w-[57vw] mt-10'>
                 {/* Landing section */}
                 <div className='h-[94vh]'>
                     <Header />
@@ -68,11 +67,11 @@ const Home = () => {
                 <section className='w-full text-white pl-3 flex flex-col gap-4'>
                     <h1 className='text-[2.8vw] text-white font-bold'>Projects</h1>
                     <div className='flex flex-wrap shrink-0 w-full gap-8'>
-                        <div className='flex items-center justify-between w-full gap-8 pl-4 pr-8'>
+                        <div className='flex items-center justify-between w-full gap-8 pl-2 pr-8'>
                             <ProjectCard />
                             <ProjectCard />
                         </div>
-                        <div className='flex items-center justify-between w-full gap-8 pl-4 pr-8'>
+                        <div className='flex items-center justify-between w-full gap-8 pl-2 pr-8'>
                             <ProjectCard />
                             <ProjectCard />
                         </div>
@@ -87,7 +86,7 @@ const Home = () => {
                 <section className='w-full text-white pl-3 flex flex-col gap-4 mt-10'>
                     <h1 className='text-[2.8vw] text-white font-bold'>Upcoming Projects</h1>
                     <div className='flex flex-wrap shrink-0 w-full gap-8'>
-                        <div className='flex items-center justify-between w-full gap-8 pl-4 pr-8'>
+                        <div className='flex items-center justify-between w-full gap-8 pl-2 pr-8'>
                             <UpcomingCard />
                             <UpcomingCard />
                         </div>
@@ -99,11 +98,11 @@ const Home = () => {
                 </section>
 
                 {/* Hire me */}
-                <section className=' bg-[#161C31] text-white mt-20 pt-8 pb-10 pl-7 pr-10 flex flex-col gap-1 rounded ml-3 mb-10 mr-1 border border-[#1F2937]'>
+                <section className=' bg-[#161C31] text-white mt-20 pt-7 pb-9 pl-7 pr-10 flex flex-col gap-1 rounded ml-3 mb-10 mr-4 border border-[#1F2937]'>
                     <h1 className='text-[1.5vw] font-semibold'>Want to hire me? Lets discuss.</h1>
-                    <div className=''>
-                        <h2 className='text-[#e5e3e3] text-[1.2vw]'>Drop your message and let's discuss about your project.</h2>
-                        <button className='bg-[#4ADE80] text-[#111827] mt-1 text-[1.1vw] font-bold px-6 rounded-sm py-[0.4vh]'>Chat on Whatsapp</button>
+                    <div >
+                        <h2 className='text-[#e5e3e3] text-[1.2vw] mb-2'>Drop your message and let's discuss about your project.</h2>
+                        <a target='_blank' href='https://wa.me/7693004956' className='bg-[#4ADE80] text-[#111827] text-[1.1vw] font-bold px-5 rounded-sm py-[0.5vh]'>Chat on Whatsapp</a>
                     </div>
                     <hr className='text-[#858585] mt-7 mb-7' />
                     <h2 className='text-[#e5e3e3] text-[1.2vw] pb-1'>Drop me a mail and I will get back to you.</h2>
