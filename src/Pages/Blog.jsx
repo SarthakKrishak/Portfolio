@@ -14,8 +14,7 @@ const Blog = () => {
                 <section className="w-full text-white pl-3 flex flex-col gap-1 mt-10">
                     <h1 className="text-[2.8vw] text-white font-bold">Blogs</h1>
                     <p className="text-[#8C8C94] text-[1.1vw] mr-28">
-                        Dive into my world—projects, source code, socials, and a hint of
-                        memes. Stay curious!
+                        Exploring ideas, sharing insights, and inspiring growth—one blog at a time.
                     </p>
                 </section>
 
