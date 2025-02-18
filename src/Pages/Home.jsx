@@ -65,7 +65,7 @@ const Home = () => {
                 </div>
                 {/* Projects */}
                 <section className='w-full text-white pl-3 flex flex-col gap-4'>
-                    <h1 className='text-[2.8vw] text-white font-bold'>Projects</h1>
+                    <h1 className='text-[2.6vw] text-white font-bold'>Projects</h1>
                     <div className='flex flex-wrap shrink-0 w-full gap-8'>
                         <div className='flex items-center justify-between w-full gap-8 pl-2 pr-8'>
                             <ProjectCard />
@@ -84,7 +84,7 @@ const Home = () => {
 
                 {/* Upcoming Project */}
                 <section className='w-full text-white pl-3 flex flex-col gap-4 mt-10'>
-                    <h1 className='text-[2.8vw] text-white font-bold'>Upcoming Projects</h1>
+                    <h1 className='text-[2.6vw] text-white font-bold'>Upcoming Projects</h1>
                     <div className='flex flex-wrap shrink-0 w-full gap-8'>
                         <div className='flex items-center justify-between w-full gap-8 pl-2 pr-8'>
                             <UpcomingCard />

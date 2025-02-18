@@ -1,25 +1,24 @@
 import React from 'react'
 import Header from '../Components/Header'
-import { RxInstagramLogo } from "react-icons/rx";
 import { RxLinkedinLogo } from "react-icons/rx";
-import { RxGithubLogo } from "react-icons/rx";
 import { PiXLogoFill } from "react-icons/pi";
 import ProjectCard from '../Components/ProjectCard';
 import { Link } from 'react-router-dom';
 import { IoIosArrowDown } from "react-icons/io";
 import UpcomingCard from '../Components/UpcomingCard';
 import Footer from '../Components/Footer';
+
 const Project = () => {
   return (
     <div className='bg-[#18181B] min-h-screen w-full flex justify-center'>
       <div className='min-h-[100vh] w-[55vw] mt-10'>
         <Header />
-        <section className='w-full text-white pl-3 flex flex-col gap-4 mt-10'>
-          <h1 className='text-[2.8vw] text-white font-bold'>Projects</h1>
-          <p className='text-[#8C8C94] text-[1.1vw] mr-28'>From commercial solutions to personal experiments and academic projects, my work reflects a deep passion for technology and innovation. Each project here tells a story of exploration, problem-solving, and continuous learning. More exciting ventures are on the horizon, and soon, I'll be sharing insights on technology, learning, and beyond—stay tuned for my blog. In the meantime, <a target='_blank' href='' className='text-[#397DEC] underline'>check out my GitHub</a> for more projects!</p>
+        <section className='w-full text-white pl-3 flex flex-col gap-3 mt-10'>
+          <h1 className='text-[2.5vw] text-white font-bold'>Projects</h1>
+          <p className='text-[#8C8C94] text-[1.1vw] mr-28 leading-7'>From commercial solutions to personal experiments and academic projects, my work reflects a deep passion for technology and innovation. Each project here tells a story of exploration, problem-solving, and continuous learning. More exciting ventures are on the horizon, and soon, I'll be sharing insights on technology, learning, and beyond—stay tuned for my blog. In the meantime, <a target='_blank' href='https://github.com/SarthakKrishak' className='text-[#397DEC] underline'>check out my GitHub</a> for more projects!</p>
         </section>
-        <section className='w-full text-white pl-3 flex flex-col gap-4 mt-22'>
-          <h1 className='text-[2.8vw] text-white font-bold'>Full Stack</h1>
+        <section className='w-full text-white pl-3 flex flex-col gap-4 mt-16'>
+          <h1 className='text-[2.5vw] text-white font-bold'>Full Stack</h1>
           <div className='flex flex-wrap shrink-0 w-full gap-8'>
             <div className='flex items-center justify-between w-full gap-8 pl-2 pr-8'>
               <ProjectCard />
@@ -37,8 +36,8 @@ const Project = () => {
         </section>
 
         {/* Upcoming Project */}
-        <section className='w-full text-white pl-3 flex flex-col gap-4 mt-10'>
-          <h1 className='text-[2.8vw] text-white font-bold'>Upcoming Projects</h1>
+        <section className='w-full text-white pl-3 flex flex-col gap-4 mt-16'>
+          <h1 className='text-[2.5vw] text-white font-bold'>Upcoming Projects</h1>
           <div className='flex flex-wrap shrink-0 w-full gap-8'>
             <div className='flex items-center justify-between w-full gap-8 pl-4 pr-8'>
               <UpcomingCard />
