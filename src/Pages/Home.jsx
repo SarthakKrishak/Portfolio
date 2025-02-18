@@ -43,8 +43,8 @@ const Home = () => {
 
                         {/* right */}
                         <div className='w-1/3 flex flex-col justify-center items-center pl-10 gap-6 pr-25'>
-                            <div className='bg-[#14B8A6] mt-26 size-[40vh] rounded-xl overflow-hidden object-contain ml-4'>
-                                <img src="./src/assets/pro.png" alt="image" />
+                            <div className='bg-[#14B8A6] mt-26 pt-3 size-[40vh] rounded-xl overflow-hidden object-fill ml-4'>
+                                <img src="/pic2.png" alt="image" />
                             </div>
                             <div className='flex items-center aspect-auto text-xl gap-8 ml-4'>
                                 <a href="https://www.instagram.com/sarthak_krishak/"
