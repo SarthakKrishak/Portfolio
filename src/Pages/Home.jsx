@@ -13,7 +13,7 @@ import Footer from '../Components/Footer';
 const Home = () => {
     return (
         <div className='bg-[#18181B] min-h-screen w-full flex justify-center'>
-            <div className='min-h-[100vh] w-[57vw] mt-10'>
+            <div className='min-h-[100vh] w-[55vw] mt-10'>
                 {/* Landing section */}
                 <div className='h-[94vh]'>
                     <Header />

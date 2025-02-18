@@ -19,8 +19,8 @@ const Header = () => {
           <div className='flex items-center gap-9 text-white border border-[#313134] px-8 rounded-3xl font-medium text-[1vw] py-2'>
               <Link to={"/"}>Home</Link>
               <Link to={"/project"}>Projects</Link>
-              <Link to={"/project"}>Blog</Link>
-              <Link to={"/project"} className="flex justify-center items-center gap-1">Resume <Download className='size-3.5'/></Link>
+              <Link to={"/blog"}>Blog</Link>
+              <a href="/SarthakKrishak_RESUME.pdf" download className="flex justify-center items-center gap-1">Resume <Download className='size-3.5'/></a>
           </div>
       </nav>
   )
