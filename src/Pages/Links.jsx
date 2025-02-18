@@ -69,7 +69,7 @@ const Links = () => {
         </a>
         <a
           onClick={handleClick}
-                  className=" bg-[#18181B] text-white text-[1.1vw] font-bold mt-4 pt-2 pb-2 px-4 pr-10 flex items-center gap-2 rounded ml-3 mr-30 border-2 border-[#27272A] hover:bg-[#27272A] cursor-pointer"
+          className=" bg-[#18181B] text-white text-[1.1vw] font-bold mt-4 pt-2 pb-2 px-4 pr-10 flex items-center gap-2 rounded ml-3 mr-30 border-2 border-[#27272A] hover:bg-[#27272A] cursor-pointer"
         >
           <img
             className="size-5 rounded-full"
@@ -80,7 +80,7 @@ const Links = () => {
         </a>
         <a
           onClick={handleClick}
-                  className=" bg-[#18181B] text-white text-[1.1vw] font-bold mt-4 pt-2 pb-2 px-4 pr-10 flex items-center gap-2 rounded ml-3 mr-30 border-2 border-[#27272A] hover:bg-[#27272A] cursor-pointer"
+          className=" bg-[#18181B] text-white text-[1.1vw] font-bold mt-4 pt-2 pb-2 px-4 pr-10 flex items-center gap-2 rounded ml-3 mr-30 border-2 border-[#27272A] hover:bg-[#27272A] cursor-pointer"
         >
           <img
             className="size-5 rounded-full"
@@ -89,13 +89,21 @@ const Links = () => {
           />
           <h1>Cabsync</h1>
         </a>
-              <a target="_blank" href="https://fixi-ai.vercel.app/" className=" bg-[#18181B] text-white text-[1.1vw] font-bold mt-4 pt-2 pb-2 px-4 pr-10 flex items-center gap-2 rounded ml-3 mr-30 border-2 border-[#27272A] hover:bg-[#27272A]">
+        <a target="_blank" href="https://fixi-ai.vercel.app/" className=" bg-[#18181B] text-white text-[1.1vw] font-bold mt-4 pt-2 pb-2 px-4 pr-10 flex items-center gap-2 rounded ml-3 mr-30 border-2 border-[#27272A] hover:bg-[#27272A]">
           <img
             className="size-5 rounded-full"
             src="./src/assets/Designer.jpeg"
             alt="image"
           />
           <h1>Fixi-AI</h1>
+        </a>
+        <a target="_blank" href="https://www.csedvit.com/" className=" bg-[#18181B] text-white text-[1.1vw] font-bold mt-4 pt-2 pb-2 px-4 pr-10 flex items-center gap-2 rounded ml-3 mr-30 border-2 border-[#27272A] hover:bg-[#27272A]">
+          <img
+            className="size-5 rounded-full"
+            src="/favicon-5.png"
+            alt="image"
+          />
+          <h1>CSED VIT</h1>
         </a>
         <Link
           onClick={HandleHome}

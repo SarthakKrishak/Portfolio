@@ -11,19 +11,23 @@ import UpcomingCard from '../Components/UpcomingCard';
 import Footer from '../Components/Footer';
 
 const Home = () => {
+
+    const handleSubmit = () => {
+        window.scrollTo(0, 0);
+    }
     return (
         <div className='bg-[#18181B] min-h-screen w-full flex justify-center'>
             <div className='min-h-[100vh] w-[55vw] mt-10'>
                 {/* Landing section */}
                 <div className='h-[94vh]'>
                     <Header />
-                    <section className='flex w-full'>
+                    <section className='flex w-full mt-5'>
 
                         {/* left */}
                         <div className='flex flex-col w-2/3 pl-3'>
                             {/* left top */}
                             <div className=' mt-20 flex flex-col text-start'>
-                                <h1 className='text-[4.1vw] text-white font-bold'>Sarthak Krishak</h1>
+                                <h1 className='text-[4vw] text-white font-bold'>Sarthak Krishak</h1>
                                 <h3 className='text-[#8C8C94] text-[1.2vw]'>Building <Link to={"/"} className='bg-[#3F3F46] px-2 text-white py-[0.45vh] font-bold'>Imaginum</Link> and other <span className='text-white font-semibold'>cool things</span></h3>
                             </div>
                             {/* left bottom */}
@@ -39,10 +43,10 @@ const Home = () => {
 
                         {/* right */}
                         <div className='w-1/3 flex flex-col justify-center items-center pl-10 gap-6 pr-25'>
-                            <div className='bg-[#14B8A6] mt-24 size-[47vh] rounded-xl overflow-hidden object-fill'>
+                            <div className='bg-[#14B8A6] mt-26 size-[40vh] rounded-xl overflow-hidden object-contain ml-4'>
                                 <img src="./src/assets/pro.png" alt="image" />
                             </div>
-                            <div className='flex items-center aspect-auto text-xl gap-8'>
+                            <div className='flex items-center aspect-auto text-xl gap-8 ml-4'>
                                 <a href="https://www.instagram.com/sarthak_krishak/"
                                     target="_blank"
                                     rel="noopener noreferrer">  <RxInstagramLogo className='text-[#8C8C94] hover:text-[#14B8A6] transition-colors duration-200' /></a>
@@ -77,7 +81,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center text-[1.1vw] mt-3 pr-8 pl-4 gap-1 font-semibold'>
-                        <Link to={"/project"}>See more </Link>
+                        <Link onClick={handleSubmit} to={"/project"}>See more </Link>
                         <IoIosArrowDown className='size-4 font-bold mt-1' />
                     </div>
                 </section>
@@ -92,7 +96,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center text-[1.1vw] mt-3 pr-8 pl-4 gap-1 font-semibold'>
-                        <Link to={"/project"}>See more </Link>
+                        <Link onClick={handleSubmit} to={"/project"}>See more </Link>
                         <IoIosArrowDown className='size-4 font-bold mt-1' />
                     </div>
                 </section>
